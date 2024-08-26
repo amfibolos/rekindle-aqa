@@ -1,0 +1,130 @@
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|###################################|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|Method: POST, RequestUri: 'http://localhost:8023/oauth2/token', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Authorization: Basic aW50ZXJuYWwtbXM6TnI0bHNuNW8=
+  User-Agent: RestSharp/111.4.1.0
+  Accept: application/json, text/json, text/x-json, text/javascript, application/xml, text/xml
+  Content-Type: application/x-www-form-urlencoded
+}|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|REQUEST BODY:
+grant_type=client_credentials&scope=communicate.read%20communicate.write|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE TO: POST RequestUri http://localhost:8023/oauth2/token|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Vary: Origin
+  Vary: Access-Control-Request-Method
+  Vary: Access-Control-Request-Headers
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 0
+  Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+  Pragma: no-cache
+  X-Frame-Options: DENY
+  Transfer-Encoding: chunked
+  Date: Sun, 25 Aug 2024 21:35:17 GMT
+  Expires: 0
+  Content-Type: application/json;charset=UTF-8
+}|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE BODY:
+{
+  "access_token": "eyJraWQiOiIxOGEwNmZhZi1lMDE3LTQyYWYtOWRmMi0zNjc5MzU1ZWM0ZGUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJpbnRlcm5hbC1tcyIsImF1ZCI6ImludGVybmFsLW1zIiwibmJmIjoxNzI0NjIxNzE3LCJzY29wZSI6WyJjb21tdW5pY2F0ZS53cml0ZSIsImNvbW11bmljYXRlLnJlYWQiXSwiaXNzIjoiaHR0cDovL2F1dGhvcml6YXRpb25zZXJ2ZXItY29udGFpbmVyOjgwMjMiLCJleHAiOjE3MjQ2MjM1MTcsImlhdCI6MTcyNDYyMTcxNywianRpIjoiM2Y0YzcyZjMtYTI5Zi00MDQ2LThkZmUtZjY3MDEzN2VkMWNlIn0.I3Q37-XMiehyXfT9rjn46_BOIAzXMAnQawTNAZtIRphYn7eV75TlygiHj_4UU5RM8MU4NKpaaJhBpmHc9tmq5qrzXc7VJP5oo-oSvAcgTSdifLBope8D28jWcR4dC4ga88H-6PM42jI8UNXipPmxICZlJRrVrEeLh1bRBazMj1lJaE5Ru_iElwegyskNeIgEAvC-UVZD43uBZXuA6jb7DmynY10ewog972UYSz_gIlldJWYBK1siHHNCHFv2092a6t1fqHI7DlMHfs5DMFI8yHEYayRLTco9BUR-kU4Av2J52mnfFAiU6g_Ufilmqpg5ia_WxhNQ4OwD-s5lraar8A",
+  "scope": "communicate.write communicate.read",
+  "token_type": "Bearer",
+  "expires_in": 1799
+}|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|###################################|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|###################################|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|Method: POST, RequestUri: 'http://localhost:8024/rekindle/customers', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Authorization: Bearer eyJraWQiOiIxOGEwNmZhZi1lMDE3LTQyYWYtOWRmMi0zNjc5MzU1ZWM0ZGUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJpbnRlcm5hbC1tcyIsImF1ZCI6ImludGVybmFsLW1zIiwibmJmIjoxNzI0NjIxNzE3LCJzY29wZSI6WyJjb21tdW5pY2F0ZS53cml0ZSIsImNvbW11bmljYXRlLnJlYWQiXSwiaXNzIjoiaHR0cDovL2F1dGhvcml6YXRpb25zZXJ2ZXItY29udGFpbmVyOjgwMjMiLCJleHAiOjE3MjQ2MjM1MTcsImlhdCI6MTcyNDYyMTcxNywianRpIjoiM2Y0YzcyZjMtYTI5Zi00MDQ2LThkZmUtZjY3MDEzN2VkMWNlIn0.I3Q37-XMiehyXfT9rjn46_BOIAzXMAnQawTNAZtIRphYn7eV75TlygiHj_4UU5RM8MU4NKpaaJhBpmHc9tmq5qrzXc7VJP5oo-oSvAcgTSdifLBope8D28jWcR4dC4ga88H-6PM42jI8UNXipPmxICZlJRrVrEeLh1bRBazMj1lJaE5Ru_iElwegyskNeIgEAvC-UVZD43uBZXuA6jb7DmynY10ewog972UYSz_gIlldJWYBK1siHHNCHFv2092a6t1fqHI7DlMHfs5DMFI8yHEYayRLTco9BUR-kU4Av2J52mnfFAiU6g_Ufilmqpg5ia_WxhNQ4OwD-s5lraar8A
+  User-Agent: RestSharp/111.4.1.0
+  Accept: application/json, text/json, text/x-json, text/javascript, application/xml, text/xml
+  Content-Type: application/json; charset=utf-8
+}|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|REQUEST BODY:
+{
+  "id": null,
+  "username": "Percy.Koelpin",
+  "firstName": "Percy",
+  "lastName": "Koelpin"
+}|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE TO: POST RequestUri http://localhost:8024/rekindle/customers|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|StatusCode: 201, ReasonPhrase: 'Created', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Vary: Origin
+  Vary: Access-Control-Request-Method
+  Vary: Access-Control-Request-Headers
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 0
+  Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+  Pragma: no-cache
+  X-Frame-Options: DENY
+  Date: Sun, 25 Aug 2024 21:35:16 GMT
+  Referrer-Policy: no-referrer
+  Expires: 0
+  Content-Type: application/json
+}|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE BODY:
+{
+  "customerId": "b7f397b6-ee9f-454a-a3a0-a121a9c0cd94",
+  "message": "Customer saved successfully!"
+}|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|###################################|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|###################################|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|Method: DELETE, RequestUri: 'http://localhost:8024/rekindle/customers/b7f397b6-ee9f-454a-a3a0-a121a9c0cd94', Version: 1.1, Content: <null>, Headers:
+{
+  Authorization: Bearer eyJraWQiOiIxOGEwNmZhZi1lMDE3LTQyYWYtOWRmMi0zNjc5MzU1ZWM0ZGUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJpbnRlcm5hbC1tcyIsImF1ZCI6ImludGVybmFsLW1zIiwibmJmIjoxNzI0NjIxNzE3LCJzY29wZSI6WyJjb21tdW5pY2F0ZS53cml0ZSIsImNvbW11bmljYXRlLnJlYWQiXSwiaXNzIjoiaHR0cDovL2F1dGhvcml6YXRpb25zZXJ2ZXItY29udGFpbmVyOjgwMjMiLCJleHAiOjE3MjQ2MjM1MTcsImlhdCI6MTcyNDYyMTcxNywianRpIjoiM2Y0YzcyZjMtYTI5Zi00MDQ2LThkZmUtZjY3MDEzN2VkMWNlIn0.I3Q37-XMiehyXfT9rjn46_BOIAzXMAnQawTNAZtIRphYn7eV75TlygiHj_4UU5RM8MU4NKpaaJhBpmHc9tmq5qrzXc7VJP5oo-oSvAcgTSdifLBope8D28jWcR4dC4ga88H-6PM42jI8UNXipPmxICZlJRrVrEeLh1bRBazMj1lJaE5Ru_iElwegyskNeIgEAvC-UVZD43uBZXuA6jb7DmynY10ewog972UYSz_gIlldJWYBK1siHHNCHFv2092a6t1fqHI7DlMHfs5DMFI8yHEYayRLTco9BUR-kU4Av2J52mnfFAiU6g_Ufilmqpg5ia_WxhNQ4OwD-s5lraar8A
+  User-Agent: RestSharp/111.4.1.0
+  Accept: application/json, text/json, text/x-json, text/javascript, application/xml, text/xml
+}|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE TO: DELETE RequestUri http://localhost:8024/rekindle/customers/b7f397b6-ee9f-454a-a3a0-a121a9c0cd94|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Vary: Origin
+  Vary: Access-Control-Request-Method
+  Vary: Access-Control-Request-Headers
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 0
+  Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+  Pragma: no-cache
+  X-Frame-Options: DENY
+  Date: Sun, 25 Aug 2024 21:35:16 GMT
+  Referrer-Policy: no-referrer
+  Expires: 0
+  Content-Length: 0
+}|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE BODY:
+|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|###################################|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|###################################|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|Method: GET, RequestUri: 'http://localhost:8024/rekindle/customers/b7f397b6-ee9f-454a-a3a0-a121a9c0cd94', Version: 1.1, Content: <null>, Headers:
+{
+  Authorization: Bearer eyJraWQiOiIxOGEwNmZhZi1lMDE3LTQyYWYtOWRmMi0zNjc5MzU1ZWM0ZGUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJpbnRlcm5hbC1tcyIsImF1ZCI6ImludGVybmFsLW1zIiwibmJmIjoxNzI0NjIxNzE3LCJzY29wZSI6WyJjb21tdW5pY2F0ZS53cml0ZSIsImNvbW11bmljYXRlLnJlYWQiXSwiaXNzIjoiaHR0cDovL2F1dGhvcml6YXRpb25zZXJ2ZXItY29udGFpbmVyOjgwMjMiLCJleHAiOjE3MjQ2MjM1MTcsImlhdCI6MTcyNDYyMTcxNywianRpIjoiM2Y0YzcyZjMtYTI5Zi00MDQ2LThkZmUtZjY3MDEzN2VkMWNlIn0.I3Q37-XMiehyXfT9rjn46_BOIAzXMAnQawTNAZtIRphYn7eV75TlygiHj_4UU5RM8MU4NKpaaJhBpmHc9tmq5qrzXc7VJP5oo-oSvAcgTSdifLBope8D28jWcR4dC4ga88H-6PM42jI8UNXipPmxICZlJRrVrEeLh1bRBazMj1lJaE5Ru_iElwegyskNeIgEAvC-UVZD43uBZXuA6jb7DmynY10ewog972UYSz_gIlldJWYBK1siHHNCHFv2092a6t1fqHI7DlMHfs5DMFI8yHEYayRLTco9BUR-kU4Av2J52mnfFAiU6g_Ufilmqpg5ia_WxhNQ4OwD-s5lraar8A
+  User-Agent: RestSharp/111.4.1.0
+  Accept: application/json, text/json, text/x-json, text/javascript, application/xml, text/xml
+}|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE TO: GET RequestUri http://localhost:8024/rekindle/customers/b7f397b6-ee9f-454a-a3a0-a121a9c0cd94|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Vary: Origin
+  Vary: Access-Control-Request-Method
+  Vary: Access-Control-Request-Headers
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 0
+  Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+  Pragma: no-cache
+  X-Frame-Options: DENY
+  Date: Sun, 25 Aug 2024 21:35:16 GMT
+  Referrer-Policy: no-referrer
+  Expires: 0
+  Content-Type: application/json
+}|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE BODY:
+{
+  "apiPath": null,
+  "errorCode": "BAD_REQUEST",
+  "errorMessage": "Customer not found!",
+  "errorTime": "2024-08-25T21:35:17.6820914"
+}|
+2024-08-25|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|###################################|

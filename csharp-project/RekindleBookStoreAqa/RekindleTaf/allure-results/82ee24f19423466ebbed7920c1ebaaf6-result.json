@@ -1,0 +1,51 @@
+{
+  "uuid": "ae5524fe-6355-458b-a321-f4ddeee8bd6f",
+  "historyId": "2c79a23749ad0ddf34584ad1769c419c",
+  "testCaseId": "793a62cdcf10da081a38e3e482d884aa",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.CustomerServiceNegativeTest.Verify_CannotUpdate_NonExistingCustomer()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Verify_CannotUpdate_NonExistingCustomer"
+    },
+    {
+      "name": "testClass",
+      "value": "CustomerServiceNegativeTest"
+    }
+  ],
+  "links": [],
+  "name": "Verify_CannotUpdate_NonExistingCustomer",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "62163f23-bb61-427d-bf99-c35b7a44aab9-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724630519077,
+  "stop": 1724630519089
+}

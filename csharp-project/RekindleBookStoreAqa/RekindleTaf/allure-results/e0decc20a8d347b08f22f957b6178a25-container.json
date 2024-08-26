@@ -1,0 +1,12 @@
+{
+  "uuid": "b3192dd1-d975-4c12-b8a6-8baf6997f870",
+  "name": "RekindleTaf.Tests.Api.CustomerServiceNegativeTest.Verify_CannotDelete_NonExistingCustomer",
+  "children": [
+    "756e812f-396d-4f42-934e-66ce13aa573e"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1724630519047,
+  "stop": 1724630519062
+}

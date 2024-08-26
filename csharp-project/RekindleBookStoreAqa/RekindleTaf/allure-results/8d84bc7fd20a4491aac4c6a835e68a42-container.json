@@ -1,0 +1,12 @@
+{
+  "uuid": "1e14ad00-2de5-4071-b15b-923f83dcf4bd",
+  "name": "RekindleTaf.Tests.Api.BookstoreServiceTest.Get_AllBookstores_Should_Return_OK",
+  "children": [
+    "d3030b30-0a4e-495e-89de-0a26bddfc114"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1724631018210,
+  "stop": 1724631018224
+}

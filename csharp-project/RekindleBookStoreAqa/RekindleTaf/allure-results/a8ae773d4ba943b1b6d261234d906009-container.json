@@ -1,0 +1,12 @@
+{
+  "uuid": "c2145fee-cc89-46fe-9336-720b1abcfac4",
+  "name": "RekindleTaf.Tests.Api.CustomerServiceNegativeTest.Verify_CannotCreateCustomer_WithEmptyValues",
+  "children": [
+    "c6031aa1-212a-4740-8509-bc0002d011bf"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1724626874389,
+  "stop": 1724626874635
+}

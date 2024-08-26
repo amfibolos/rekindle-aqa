@@ -1,0 +1,51 @@
+{
+  "uuid": "2f9c68e6-21c8-451c-b82d-7038d6931665",
+  "historyId": "12bc362fd8d9bea010e61289d2f821fc",
+  "testCaseId": "0ccee3cba530e080f587f10c97087bdd",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.BookstoreServiceTest.Get_NewBookstore_Should_Return_OK()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Get_NewBookstore_Should_Return_OK"
+    },
+    {
+      "name": "testClass",
+      "value": "BookstoreServiceTest"
+    }
+  ],
+  "links": [],
+  "name": "Get_NewBookstore_Should_Return_OK",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "1239ef46-3ef9-4c02-93d9-255c9c0369bb-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724633704110,
+  "stop": 1724633704146
+}

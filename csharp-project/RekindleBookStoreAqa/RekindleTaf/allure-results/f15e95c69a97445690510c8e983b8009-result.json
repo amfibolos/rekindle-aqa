@@ -1,0 +1,51 @@
+{
+  "uuid": "0bfa38f9-d9bd-46f9-afbd-2d0d714f727f",
+  "historyId": "9d387f524fce70c70a9235247ce73b57",
+  "testCaseId": "33b7b387d18395a34dc8c3740a535ae9",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.BookstoreProductServiceTest.Delete_NewProduct_ShouldReturnNoContent()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Delete_NewProduct_ShouldReturnNoContent"
+    },
+    {
+      "name": "testClass",
+      "value": "BookstoreProductServiceTest"
+    }
+  ],
+  "links": [],
+  "name": "Delete_NewProduct_ShouldReturnNoContent",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "fdbd87c5-3840-497f-9874-468381fd4697-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724634588416,
+  "stop": 1724634588520
+}

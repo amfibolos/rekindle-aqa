@@ -1,0 +1,72 @@
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|###################################|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|Method: POST, RequestUri: 'http://localhost:8024/rekindle/bookstores/7233788d-b10f-4ed2-901a-93cf331c0493/product', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Authorization: Bearer eyJraWQiOiIxOGEwNmZhZi1lMDE3LTQyYWYtOWRmMi0zNjc5MzU1ZWM0ZGUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJpbnRlcm5hbC1tcyIsImF1ZCI6ImludGVybmFsLW1zIiwibmJmIjoxNzI0NjMzNzAzLCJzY29wZSI6WyJjb21tdW5pY2F0ZS53cml0ZSIsImNvbW11bmljYXRlLnJlYWQiXSwiaXNzIjoiaHR0cDovL2F1dGhvcml6YXRpb25zZXJ2ZXItY29udGFpbmVyOjgwMjMiLCJleHAiOjE3MjQ2MzU1MDMsImlhdCI6MTcyNDYzMzcwMywianRpIjoiYmY1NjlkZDQtYTA0Yi00OGI3LWFlZjItZWQ2MWEzOGVmYmU2In0.ofKtldlAWuo80sIb9ddtPda4w97UvQKXa8Tkh9VE2q7wzowj5y4XR-MgzJxgiI8GxCnoSmq9VebknPVeLXcYOJNqB-xgapgwVgrloEcdeCvy5sNWFb1kLjNhmhL72buxaUOfeVyNnOERZj1xUuucbVn-3CSVeuIfSlPmSJh3IgG89n1nyDlQubWathAPD-qhdQma-_pyT85dmYz1a2eBDnTupSuMCKgRCqcMN8iO6UaV05BZ2ee6TsdgRb5PapnVKKnE_JMK8wIiUEpevAfdmLnv2Wq25ram6nd_Su02PkZ5Dxk8e8-yYBrwXYHkgX_fGk_vOt47Pt2HOWdK02ttow
+  User-Agent: RestSharp/111.4.1.0
+  Accept: application/json, text/json, text/x-json, text/javascript, application/xml, text/xml
+  Content-Type: application/json; charset=utf-8
+}|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|REQUEST BODY:
+{
+  "id": null,
+  "name": "Chips",
+  "price": 918.95,
+  "available": true,
+  "bookstoreId": "7233788d-b10f-4ed2-901a-93cf331c0493",
+  "bookstores": null
+}|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE TO: POST RequestUri http://localhost:8024/rekindle/bookstores/7233788d-b10f-4ed2-901a-93cf331c0493/product|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|StatusCode: 201, ReasonPhrase: 'Created', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Vary: Origin
+  Vary: Access-Control-Request-Method
+  Vary: Access-Control-Request-Headers
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 0
+  Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+  Pragma: no-cache
+  X-Frame-Options: DENY
+  Date: Mon, 26 Aug 2024 00:55:04 GMT
+  Referrer-Policy: no-referrer
+  Expires: 0
+  Content-Type: application/json
+}|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE BODY:
+"f2d77872-b910-4e43-b43c-36330f9dd590"|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|###################################|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|###################################|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|Method: GET, RequestUri: 'http://localhost:8024/rekindle/bookstores/product/f2d77872-b910-4e43-b43c-36330f9dd590', Version: 1.1, Content: <null>, Headers:
+{
+  Authorization: Bearer eyJraWQiOiIxOGEwNmZhZi1lMDE3LTQyYWYtOWRmMi0zNjc5MzU1ZWM0ZGUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJpbnRlcm5hbC1tcyIsImF1ZCI6ImludGVybmFsLW1zIiwibmJmIjoxNzI0NjMzNzAzLCJzY29wZSI6WyJjb21tdW5pY2F0ZS53cml0ZSIsImNvbW11bmljYXRlLnJlYWQiXSwiaXNzIjoiaHR0cDovL2F1dGhvcml6YXRpb25zZXJ2ZXItY29udGFpbmVyOjgwMjMiLCJleHAiOjE3MjQ2MzU1MDMsImlhdCI6MTcyNDYzMzcwMywianRpIjoiYmY1NjlkZDQtYTA0Yi00OGI3LWFlZjItZWQ2MWEzOGVmYmU2In0.ofKtldlAWuo80sIb9ddtPda4w97UvQKXa8Tkh9VE2q7wzowj5y4XR-MgzJxgiI8GxCnoSmq9VebknPVeLXcYOJNqB-xgapgwVgrloEcdeCvy5sNWFb1kLjNhmhL72buxaUOfeVyNnOERZj1xUuucbVn-3CSVeuIfSlPmSJh3IgG89n1nyDlQubWathAPD-qhdQma-_pyT85dmYz1a2eBDnTupSuMCKgRCqcMN8iO6UaV05BZ2ee6TsdgRb5PapnVKKnE_JMK8wIiUEpevAfdmLnv2Wq25ram6nd_Su02PkZ5Dxk8e8-yYBrwXYHkgX_fGk_vOt47Pt2HOWdK02ttow
+  User-Agent: RestSharp/111.4.1.0
+  Accept: application/json, text/json, text/x-json, text/javascript, application/xml, text/xml
+}|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE TO: GET RequestUri http://localhost:8024/rekindle/bookstores/product/f2d77872-b910-4e43-b43c-36330f9dd590|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Vary: Origin
+  Vary: Access-Control-Request-Method
+  Vary: Access-Control-Request-Headers
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 0
+  Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+  Pragma: no-cache
+  X-Frame-Options: DENY
+  Date: Mon, 26 Aug 2024 00:55:04 GMT
+  Referrer-Policy: no-referrer
+  Expires: 0
+  Content-Type: application/json
+}|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE BODY:
+{
+  "id": "f2d77872-b910-4e43-b43c-36330f9dd590",
+  "name": "Chips",
+  "price": 918.95,
+  "available": true,
+  "bookstores": [
+    "7233788d-b10f-4ed2-901a-93cf331c0493"
+  ]
+}|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|###################################|

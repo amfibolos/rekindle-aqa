@@ -1,0 +1,51 @@
+{
+  "uuid": "48d68082-33a6-40f8-88a4-6467334a4f3c",
+  "historyId": "e328267976d391668f7e69e1b24df61b",
+  "testCaseId": "07b8b20fc9a02602f27ac20c9d4bbb5b",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.CustomerServiceTest.Create_NewUser_Should_Return_OK()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Create_NewUser_Should_Return_OK"
+    },
+    {
+      "name": "testClass",
+      "value": "CustomerServiceTest"
+    }
+  ],
+  "links": [],
+  "name": "Create_NewUser_Should_Return_OK",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "778e0954-2f0d-4905-8d4a-daa435f72d3d-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724633703787,
+  "stop": 1724633704031
+}

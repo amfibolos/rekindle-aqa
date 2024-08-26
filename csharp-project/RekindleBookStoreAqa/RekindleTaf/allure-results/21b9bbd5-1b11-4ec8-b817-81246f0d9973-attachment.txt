@@ -1,0 +1,32 @@
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|###################################|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|Method: DELETE, RequestUri: 'http://localhost:8024/rekindle/customers/0ee60630-bf92-4462-b34a-d338e37b7d19', Version: 1.1, Content: <null>, Headers:
+{
+  Authorization: Bearer eyJraWQiOiIxOGEwNmZhZi1lMDE3LTQyYWYtOWRmMi0zNjc5MzU1ZWM0ZGUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJpbnRlcm5hbC1tcyIsImF1ZCI6ImludGVybmFsLW1zIiwibmJmIjoxNzI0NjMzNzAzLCJzY29wZSI6WyJjb21tdW5pY2F0ZS53cml0ZSIsImNvbW11bmljYXRlLnJlYWQiXSwiaXNzIjoiaHR0cDovL2F1dGhvcml6YXRpb25zZXJ2ZXItY29udGFpbmVyOjgwMjMiLCJleHAiOjE3MjQ2MzU1MDMsImlhdCI6MTcyNDYzMzcwMywianRpIjoiNzEyNWNlNWEtMDM2Zi00NWMyLTg2NjctNjFkODU5NzExMzAyIn0.sarcYW8DYtO1r9E8vpoMlckLj9uuXRirfTE57tW1_S2NNFWkJoqfcXoA-KyRy3NAIy9NlZoe4xJ3NQZlib2TnGUfR_UXpgzUwfjC59zwyUVcLM3EaYOT2KOUbjg-5PhoAgO29aDNMf7rpTeMFBlKl8DMWvOqqJbD2jTcLeWtUhGK7P_c5tPI8tkl8CY5RBfzWBSA2hIX6fPEj4cPJwPcyyRD_kgNf7FAvMHpy698pXSZKjYEa0QJnCZa4W8H1qJ9YBTNas-UF6Qbskuw5OmfKqZQIM2ZuAOkoihFUVr4wauG22PQNlWuSwZbeF2cm2kLryYV4LxqzdPXwVYYxQLhqA
+  User-Agent: RestSharp/111.4.1.0
+  Accept: application/json, text/json, text/x-json, text/javascript, application/xml, text/xml
+}|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE TO: DELETE RequestUri http://localhost:8024/rekindle/customers/0ee60630-bf92-4462-b34a-d338e37b7d19|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Vary: Origin
+  Vary: Access-Control-Request-Method
+  Vary: Access-Control-Request-Headers
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 0
+  Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+  Pragma: no-cache
+  X-Frame-Options: DENY
+  Date: Mon, 26 Aug 2024 00:55:04 GMT
+  Referrer-Policy: no-referrer
+  Expires: 0
+  Content-Type: application/json
+}|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE BODY:
+{
+  "apiPath": null,
+  "errorCode": "BAD_REQUEST",
+  "errorMessage": "Customer not found!",
+  "errorTime": "2024-08-26T00:55:04.0727762"
+}|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|###################################|

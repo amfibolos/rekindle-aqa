@@ -1,0 +1,51 @@
+{
+  "uuid": "1fd47efa-bf5c-432a-9696-1b30e65d43ca",
+  "historyId": "382eb284bcb812990103da5b31dbbbe1",
+  "testCaseId": "763ed5bf7639c06a4dccdb3f587ab29e",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.BookstoreProductServiceNegativeTest.Verify_CannotCreateProduct_WithEmptyValues()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Verify_CannotCreateProduct_WithEmptyValues"
+    },
+    {
+      "name": "testClass",
+      "value": "BookstoreProductServiceNegativeTest"
+    }
+  ],
+  "links": [],
+  "name": "Verify_CannotCreateProduct_WithEmptyValues",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "db86a464-eb4d-4c69-ba2f-2560e57af238-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724634429472,
+  "stop": 1724634429492
+}

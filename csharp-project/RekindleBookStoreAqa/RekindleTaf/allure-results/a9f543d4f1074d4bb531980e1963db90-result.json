@@ -1,0 +1,51 @@
+{
+  "uuid": "756e812f-396d-4f42-934e-66ce13aa573e",
+  "historyId": "7575886c30d656b0a03658f7980ecbdf",
+  "testCaseId": "857325898af43c3600c7fb44bd591ef5",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.CustomerServiceNegativeTest.Verify_CannotDelete_NonExistingCustomer()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Verify_CannotDelete_NonExistingCustomer"
+    },
+    {
+      "name": "testClass",
+      "value": "CustomerServiceNegativeTest"
+    }
+  ],
+  "links": [],
+  "name": "Verify_CannotDelete_NonExistingCustomer",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "6b10acb8-c147-49c0-9c7b-2c2ac29558a1-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724630519047,
+  "stop": 1724630519061
+}

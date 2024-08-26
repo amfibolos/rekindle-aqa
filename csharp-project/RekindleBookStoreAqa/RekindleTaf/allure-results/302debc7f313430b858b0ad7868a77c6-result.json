@@ -1,0 +1,51 @@
+{
+  "uuid": "ce819e55-78d5-4c95-8e50-269ca0623f61",
+  "historyId": "1c9bade4586b13c9c47e031c890e94da",
+  "testCaseId": "41f7c5c0c5c97ca76a21fc77549ce2c6",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.CustomerServiceTest.Get_AllCustomers_Should_Return_OK()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "14"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Get_AllCustomers_Should_Return_OK"
+    },
+    {
+      "name": "testClass",
+      "value": "CustomerServiceTest"
+    }
+  ],
+  "links": [],
+  "name": "Get_AllCustomers_Should_Return_OK",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "ad161e3e-1872-48a2-822f-5f798fcf6033-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724623684586,
+  "stop": 1724623684613
+}

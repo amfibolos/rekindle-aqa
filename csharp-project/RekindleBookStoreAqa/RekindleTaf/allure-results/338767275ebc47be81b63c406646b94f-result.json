@@ -1,0 +1,51 @@
+{
+  "uuid": "236cef0c-f30e-4b82-99eb-a0b2681e031a",
+  "historyId": "88369cd5f12153f9ee2579ef83fbf9fa",
+  "testCaseId": "2562208001213af9727a1e8f6a261449",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.BookstoreProductServiceNegativeTest.Verify_CannotDelete_NonExistingProduct()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Verify_CannotDelete_NonExistingProduct"
+    },
+    {
+      "name": "testClass",
+      "value": "BookstoreProductServiceNegativeTest"
+    }
+  ],
+  "links": [],
+  "name": "Verify_CannotDelete_NonExistingProduct",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "40feeedf-d419-491b-9296-4cebb33c29ba-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724634588401,
+  "stop": 1724634588412
+}

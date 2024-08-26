@@ -1,0 +1,12 @@
+{
+  "uuid": "6fc0f305-9704-49f6-a524-35882ba4a15e",
+  "name": "RekindleTaf.Tests.Api.BookstoreProductServiceNegativeTest.Verify_CannotCreateProduct_WithNullValues",
+  "children": [
+    "6d087c29-e91d-46ec-8ec9-c0369b9a49c9"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1724634429515,
+  "stop": 1724634429523
+}

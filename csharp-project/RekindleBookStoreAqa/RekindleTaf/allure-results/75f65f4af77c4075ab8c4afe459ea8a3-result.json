@@ -1,0 +1,51 @@
+{
+  "uuid": "1e7f8b7b-bbe5-46d3-8f3c-0440e29b11d6",
+  "historyId": "01c6b3e9e2cfd24363f56a21b96aa369",
+  "testCaseId": "59f978c412be921ea4294bef8322727a",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.CustomerServiceTest.Update_NewUser_Should_Return_NoContent()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Update_NewUser_Should_Return_NoContent"
+    },
+    {
+      "name": "testClass",
+      "value": "CustomerServiceTest"
+    }
+  ],
+  "links": [],
+  "name": "Update_NewUser_Should_Return_NoContent",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "76f366bf-3cd9-4f61-bb68-6ca68a733c89-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724631018263,
+  "stop": 1724631018314
+}

@@ -1,0 +1,12 @@
+{
+  "uuid": "727d78eb-edc6-4fae-aab0-a6b87518db7d",
+  "name": "RekindleTaf.Tests.Api.BookstoreServiceNegativeTest.Verify_CannotGet_NonExistingBookstore",
+  "children": [
+    "16c509ab-c9d8-437b-9eaa-8c76548d608e"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1724634588413,
+  "stop": 1724634588425
+}

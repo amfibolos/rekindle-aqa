@@ -1,0 +1,58 @@
+{
+  "uuid": "949b0e07-c7bd-48d6-be62-660d0f5ad8f3",
+  "historyId": "09910f58dae1e27fdccb9a40defd5ed6",
+  "testCaseId": "b7888b3c5cc63ffdd5ceb35b3d65d89e",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.CustomerServiceNegativeTest.Verify_CannotCreateCustomer_WithNullValues()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Verify_CannotCreateCustomer_WithNullValues"
+    },
+    {
+      "name": "testClass",
+      "value": "CustomerServiceNegativeTest"
+    }
+  ],
+  "links": [],
+  "name": "Verify_CannotCreateCustomer_WithNullValues",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Expected response.GetNode(\"firstName\") to be one of {\"must not be blank\", \"must not be blank\"}, but found \"must not be null\".",
+    "trace": "   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)\r\n   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)\r\n   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)\r\n   at FluentAssertions.Primitives.StringAssertions`1.BeOneOf(IEnumerable`1 validValues, String because, Object[] becauseArgs)\r\n   at FluentAssertions.Primitives.StringAssertions`1.BeOneOf(String[] validValues)\r\n   at RekindleTaf.Tests.Api.CustomerServiceNegativeTest.Verify_CannotCreateCustomer_WithNullValues() in C:\\projects\\private\\rekindle-aqa\\csharp-project\\RekindleBookStoreAqa\\RekindleTaf\\Tests\\Api\\CustomerServiceNegativeTest.cs:line 32\r\n"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "c8a10da7-7918-4d13-8406-f34503969f02-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724627697904,
+  "stop": 1724627697955
+}

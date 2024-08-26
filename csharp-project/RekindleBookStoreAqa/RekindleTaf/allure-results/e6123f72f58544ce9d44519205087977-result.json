@@ -1,0 +1,58 @@
+{
+  "uuid": "aeeda7f5-0450-4d63-8731-5bbc599a18d6",
+  "historyId": "884231727eda43a7c2b28fa5c2406b76",
+  "testCaseId": "68222c1d33dcc17e8f1e1611ac0f45f5",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.BookstoreServiceNegativeTest.Verify_CannotDelete_NonExistingBookstore()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Verify_CannotDelete_NonExistingBookstore"
+    },
+    {
+      "name": "testClass",
+      "value": "BookstoreServiceNegativeTest"
+    }
+  ],
+  "links": [],
+  "name": "Verify_CannotDelete_NonExistingBookstore",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Expected response.StatusCode to be HttpStatusCode.BadRequest {value: 400}, but found HttpStatusCode.NotFound {value: 404}.",
+    "trace": "   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)\r\n   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)\r\n   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)\r\n   at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)\r\n   at RekindleTaf.Tests.Api.BookstoreServiceNegativeTest.Verify_CannotDelete_NonExistingBookstore() in C:\\projects\\private\\rekindle-aqa\\csharp-project\\RekindleBookStoreAqa\\RekindleTaf\\Tests\\Api\\BookstoreServiceNegativeTest.cs:line 56\r\n"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "5e1f8701-b52c-4c91-9ca0-01eee323f0c5-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724631724916,
+  "stop": 1724631724965
+}

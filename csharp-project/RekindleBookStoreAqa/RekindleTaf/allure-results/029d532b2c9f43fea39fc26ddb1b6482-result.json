@@ -1,0 +1,58 @@
+{
+  "uuid": "70629133-ef38-45a8-9e7d-6ea50bf96f3f",
+  "historyId": "2c79a23749ad0ddf34584ad1769c419c",
+  "testCaseId": "793a62cdcf10da081a38e3e482d884aa",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.CustomerServiceNegativeTest.Verify_CannotUpdate_NonExistingCustomer()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Verify_CannotUpdate_NonExistingCustomer"
+    },
+    {
+      "name": "testClass",
+      "value": "CustomerServiceNegativeTest"
+    }
+  ],
+  "links": [],
+  "name": "Verify_CannotUpdate_NonExistingCustomer",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at RekindleTaf.Utils.ExtensionMethods.GetNode(RestResponse response, String nodeName) in C:\\projects\\private\\rekindle-aqa\\csharp-project\\RekindleBookStoreAqa\\RekindleTaf\\Utils\\ExtensionMethods.cs:line 13\r\n   at RekindleTaf.Tests.Api.CustomerServiceNegativeTest.Verify_CannotUpdate_NonExistingCustomer() in C:\\projects\\private\\rekindle-aqa\\csharp-project\\RekindleBookStoreAqa\\RekindleTaf\\Tests\\Api\\CustomerServiceNegativeTest.cs:line 61\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "45c97fac-4d0a-4211-b9cb-d8465d765d90-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724628092268,
+  "stop": 1724628092281
+}

@@ -1,0 +1,16 @@
+{
+  "uuid": "c3c5e152-82a7-4ab8-af37-29b9b235f0e9",
+  "name": "RekindleTaf.Tests.Api.CustomerServiceTest",
+  "children": [
+    "0812facf-c9c6-4ce6-8527-0a0c68624697",
+    "0743691c-6daf-4e0d-9bf9-d6a85948ccf1",
+    "ce819e55-78d5-4c95-8e50-269ca0623f61",
+    "24968a82-6c0b-4e1b-a8d4-14a0559eba51",
+    "bbcc8e86-561a-4793-8484-ff08a40dec08"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1724623591711,
+  "stop": 1724623684759
+}

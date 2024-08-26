@@ -1,0 +1,32 @@
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|###################################|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.RequestLoggingInterceptor|Method: GET, RequestUri: 'http://localhost:8024/rekindle/bookstores/8404ee3e-5f88-4b11-a930-fc27e1b442da', Version: 1.1, Content: <null>, Headers:
+{
+  Authorization: Bearer eyJraWQiOiIxOGEwNmZhZi1lMDE3LTQyYWYtOWRmMi0zNjc5MzU1ZWM0ZGUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJpbnRlcm5hbC1tcyIsImF1ZCI6ImludGVybmFsLW1zIiwibmJmIjoxNzI0NjM0NTg4LCJzY29wZSI6WyJjb21tdW5pY2F0ZS53cml0ZSIsImNvbW11bmljYXRlLnJlYWQiXSwiaXNzIjoiaHR0cDovL2F1dGhvcml6YXRpb25zZXJ2ZXItY29udGFpbmVyOjgwMjMiLCJleHAiOjE3MjQ2MzYzODgsImlhdCI6MTcyNDYzNDU4OCwianRpIjoiMzdlNmQ1OWItYzc0Ny00MmQ1LTlkNGQtZTc5Y2ZhOTgyNmIzIn0.pqFJhlLwDIpD3ePgLx8UWVwmisf-LsNE78L0vb_KanvD3sODx4KCSAHHrpa9KPIx2BtjF8KiB9TcyEkEhwJm4WIR1nlKGGW6-E229fgMvNG64eV8A6JWgr7T3tA4vGVwYWMwzvIX-oCzL9w6qv0FqP6E5ZB9DZqiLByWc3iLE9xd3HS98K3FVYTQyxi15ReHMXfKPSpnw3mjIalVoezT6ABTEaEpnmbNg8T_HV80BnIJUIqqHk8tD_Mpr3R3Aa-o2SiHZvrWsjhrdJY-XgGdN6RSVGaq8i2eLB3ERiVfEevk7oYfKqyrjyPmrYoNwnZ6R6aw8z5qVxgAk-eqWzfqiQ
+  User-Agent: RestSharp/111.4.1.0
+  Accept: application/json, text/json, text/x-json, text/javascript, application/xml, text/xml
+}|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE TO: GET RequestUri http://localhost:8024/rekindle/bookstores/8404ee3e-5f88-4b11-a930-fc27e1b442da|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Vary: Origin
+  Vary: Access-Control-Request-Method
+  Vary: Access-Control-Request-Headers
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 0
+  Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+  Pragma: no-cache
+  X-Frame-Options: DENY
+  Date: Mon, 26 Aug 2024 01:09:48 GMT
+  Referrer-Policy: no-referrer
+  Expires: 0
+  Content-Type: application/json
+}|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|RESPONSE BODY:
+{
+  "apiPath": null,
+  "errorCode": "NOT_FOUND",
+  "errorMessage": "Bookstore not found",
+  "errorTime": "2024-08-26T01:09:48.4211036"
+}|
+2024-08-26|INFO|RekindleTaf.Configuration.Rest.Interceptors.ResponseLoggingInterceptor|###################################|

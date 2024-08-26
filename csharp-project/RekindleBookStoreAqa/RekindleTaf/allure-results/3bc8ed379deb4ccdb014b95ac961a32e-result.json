@@ -1,0 +1,58 @@
+{
+  "uuid": "ae613b48-d7bc-46ea-a8ca-15b7711ab53b",
+  "historyId": "9d387f524fce70c70a9235247ce73b57",
+  "testCaseId": "33b7b387d18395a34dc8c3740a535ae9",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.BookstoreProductServiceTest.Delete_NewProduct_ShouldReturnNoContent()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Delete_NewProduct_ShouldReturnNoContent"
+    },
+    {
+      "name": "testClass",
+      "value": "BookstoreProductServiceTest"
+    }
+  ],
+  "links": [],
+  "name": "Delete_NewProduct_ShouldReturnNoContent",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Expected response.StatusCode to be HttpStatusCode.NoContent {value: 204}, but found HttpStatusCode.NotFound {value: 404}.",
+    "trace": "   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)\r\n   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)\r\n   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)\r\n   at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)\r\n   at RekindleTaf.Tests.Api.BookstoreProductServiceTest.Delete_NewProduct_ShouldReturnNoContent() in C:\\projects\\private\\rekindle-aqa\\csharp-project\\RekindleBookStoreAqa\\RekindleTaf\\Tests\\Api\\BookstoreProductServiceTest.cs:line 89\r\n"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "fe16d263-478c-4e4d-98b0-da97a2afe157-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724633686885,
+  "stop": 1724633686989
+}

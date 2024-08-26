@@ -1,0 +1,51 @@
+{
+  "uuid": "62e1c5f5-5121-4dc5-a0cd-3afd09c31c8c",
+  "historyId": "f23d77c58433ed795978485c02247b06",
+  "testCaseId": "f038b79771d426cd1d73a458acbc3f68",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.CustomerServiceTest.Delete_NewUser_Should_Return_OK()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "14"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Delete_NewUser_Should_Return_OK"
+    },
+    {
+      "name": "testClass",
+      "value": "CustomerServiceTest"
+    }
+  ],
+  "links": [],
+  "name": "Delete_NewUser_Should_Return_OK",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "e70d00b9-2b34-40be-9d6a-9f01900e855a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724623351101,
+  "stop": 1724623401870
+}

@@ -1,0 +1,51 @@
+{
+  "uuid": "90d89707-ad4b-4917-a15f-a2c44b9a1e35",
+  "historyId": "7f76dffe698c2d555f404df09313a93d",
+  "testCaseId": "1cbea4e1861b7adec40418faede9f8de",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.BookstoreProductServiceNegativeTest.Verify_CannotGet_NonExistingProduct()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Verify_CannotGet_NonExistingProduct"
+    },
+    {
+      "name": "testClass",
+      "value": "BookstoreProductServiceNegativeTest"
+    }
+  ],
+  "links": [],
+  "name": "Verify_CannotGet_NonExistingProduct",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "feb83dee-3062-477a-801b-ae99ee69a4e2-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724634429523,
+  "stop": 1724634429545
+}

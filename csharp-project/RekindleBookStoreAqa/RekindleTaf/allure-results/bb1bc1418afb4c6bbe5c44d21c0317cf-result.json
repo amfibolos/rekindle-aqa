@@ -1,0 +1,51 @@
+{
+  "uuid": "7d0e5a1d-235c-41d0-88c7-a31307b62f03",
+  "historyId": "daa2f4be3a371896f3183eee271a7624",
+  "testCaseId": "196ab83c624a3ef2004c6e22c9fe437f",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.BookstoreServiceNegativeTest.Verify_CannotCreateBookstore_WithEmptyValues()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Verify_CannotCreateBookstore_WithEmptyValues"
+    },
+    {
+      "name": "testClass",
+      "value": "BookstoreServiceNegativeTest"
+    }
+  ],
+  "links": [],
+  "name": "Verify_CannotCreateBookstore_WithEmptyValues",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "ac9d8452-3c8e-4878-8f1e-d3e8ad260083-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724631724669,
+  "stop": 1724631724882
+}

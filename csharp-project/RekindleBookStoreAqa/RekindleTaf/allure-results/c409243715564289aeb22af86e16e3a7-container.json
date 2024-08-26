@@ -1,0 +1,12 @@
+{
+  "uuid": "6f948d32-8f71-4985-8ca9-56c60c8f485c",
+  "name": "RekindleTaf.Tests.Api.CustomerServiceTest.Get_NewUser_Should_Return_OK",
+  "children": [
+    "e499a3b6-b65f-4c10-a629-990ca153c1c4"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1724631775185,
+  "stop": 1724631775217
+}

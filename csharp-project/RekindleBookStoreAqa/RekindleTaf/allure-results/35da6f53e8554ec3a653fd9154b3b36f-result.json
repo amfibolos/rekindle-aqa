@@ -1,0 +1,51 @@
+{
+  "uuid": "bf0ff30e-3c9a-47c3-ae9c-7aba4b682dca",
+  "historyId": "9a7a50fa4c2ee58d1e260a46b8b34952",
+  "testCaseId": "40ad92b13190d5d1fde2b4298a92454d",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.BookstoreServiceTest.Delete_Bookstore_Should_Return_NoContent()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Delete_Bookstore_Should_Return_NoContent"
+    },
+    {
+      "name": "testClass",
+      "value": "BookstoreServiceTest"
+    }
+  ],
+  "links": [],
+  "name": "Delete_Bookstore_Should_Return_NoContent",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "5641ed53-4bdf-4db4-9732-317b73568f4a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724633704042,
+  "stop": 1724633704095
+}

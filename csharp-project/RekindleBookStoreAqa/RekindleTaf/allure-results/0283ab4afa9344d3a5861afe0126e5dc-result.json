@@ -1,0 +1,58 @@
+{
+  "uuid": "e76b7bcc-02d4-40dc-b234-ec9143450f75",
+  "historyId": "0c1c71544fa4f0bb498638aa70627c4a",
+  "testCaseId": "bd041a2029cc3ab02b61412b92c70440",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.BookstoreServiceNegativeTest.Verify_CannotGet_NonExistingBookstore()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Verify_CannotGet_NonExistingBookstore"
+    },
+    {
+      "name": "testClass",
+      "value": "BookstoreServiceNegativeTest"
+    }
+  ],
+  "links": [],
+  "name": "Verify_CannotGet_NonExistingBookstore",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Expected response.StatusCode to be HttpStatusCode.BadRequest {value: 400}, but found HttpStatusCode.NotFound {value: 404}.",
+    "trace": "   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)\r\n   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)\r\n   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)\r\n   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)\r\n   at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)\r\n   at RekindleTaf.Tests.Api.BookstoreServiceNegativeTest.Verify_CannotGet_NonExistingBookstore() in C:\\projects\\private\\rekindle-aqa\\csharp-project\\RekindleBookStoreAqa\\RekindleTaf\\Tests\\Api\\BookstoreServiceNegativeTest.cs:line 38\r\n"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "72ee9a02-18ee-4666-9161-339d29c05c4b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724631724968,
+  "stop": 1724631724980
+}

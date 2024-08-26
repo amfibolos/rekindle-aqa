@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+    <TestRunParameters>
+        <Parameter name="BaseUrl" value="http://localhost:8024" />
+        <Parameter name="BaseTokenUrl" value="http://localhost:8023/oauth2/token" />
+        <Parameter name="GrantType" value="client_credentials" />
+        <Parameter name="Scope" value="communicate.read communicate.write" />
+        <Parameter name="ClientId" value="internal-ms" />
+        <Parameter name="ClientSecret" value="Nr4lsn5o" />
+    </TestRunParameters>
+</RunSettings>

@@ -1,0 +1,12 @@
+{
+  "uuid": "c1c7c25a-78a8-4156-8613-9b5974a339d0",
+  "name": "RekindleTaf.Tests.Api.BookstoreServiceTest.Delete_Bookstore_Should_Return_NoCOntent",
+  "children": [
+    "4ad7442a-e7dc-42a1-993c-0a7560776056"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1724630977973,
+  "stop": 1724630978071
+}

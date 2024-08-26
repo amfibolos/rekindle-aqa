@@ -1,0 +1,51 @@
+{
+  "uuid": "4a76d169-80dd-40c4-b659-315c22cdb5a9",
+  "historyId": "0c1c71544fa4f0bb498638aa70627c4a",
+  "testCaseId": "bd041a2029cc3ab02b61412b92c70440",
+  "fullName": "RekindleTaf:RekindleTaf.Tests.Api.BookstoreServiceNegativeTest.Verify_CannotGet_NonExistingBookstore()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "DAMSKY-DESKTOP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "RekindleTaf.Tests.Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "Verify_CannotGet_NonExistingBookstore"
+    },
+    {
+      "name": "testClass",
+      "value": "BookstoreServiceNegativeTest"
+    }
+  ],
+  "links": [],
+  "name": "Verify_CannotGet_NonExistingBookstore",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "5b05d1ac-69e6-44e1-9587-13016bd86b5e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1724633704076,
+  "stop": 1724633704087
+}
