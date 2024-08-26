@@ -5,6 +5,10 @@
 # Log files
 *.log
 
+### ALLURE
+allure-results
+allure-reports
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
