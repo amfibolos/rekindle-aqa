@@ -1,0 +1,10 @@
+{
+  "envConfig": {
+    "baseUrl": "http://localhost:8024",
+    "tokenUrl": "http://localhost:8023/oauth2/token",
+    "grantType": "client_credentials",
+    "scope": "communicate.read communicate.write",
+    "clientId": "internal-ms",
+    "clientSecret": "Nr4lsn5o"
+  }
+}
