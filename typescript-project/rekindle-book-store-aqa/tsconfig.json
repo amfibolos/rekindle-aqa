@@ -20,7 +20,9 @@
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "@/conf/*": ["src/configuration/*"]
+      "@/conf/*": ["src/configuration/*"],
+      "@/model/*": ["src/model/*"],
+      "@/rest/*": ["src/rest/*"]
     }
   },
   "include": ["./"],
