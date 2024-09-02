@@ -1,9 +1,9 @@
-import {afterAll, beforeAll, describe, expect, it, test} from "@jest/globals";
+import {afterAll, beforeAll, describe, expect, test} from "@jest/globals";
 import {Customer} from "@/model/domain-model";
 import {FactoryKey, FactoryKit, ValueObjectFactory} from "@/model/factory";
 import {CustomerController} from "@/rest/controllers/customer-controller";
 import {CustomerKey} from "@/model/customer-factory";
-import {AxiosError, AxiosResponse, HttpStatusCode} from "axios";
+import {HttpStatusCode} from "axios";
 import {ErrorMessage} from "../src/utils/utils";
 
 describe('Customer Service Test', () => {
@@ -25,7 +25,7 @@ describe('Customer Service Test', () => {
         }
     });
 
-    it('should create a new user and return OK', async () => {
+    test('should create a new user and return OK', async () => {
         const customerFactory = factoryKit.factory<Customer>(FactoryKey.customer);
         let customer = customerFactory.create(CustomerKey.stdCustomerActive);
         customer = await customerController.postSuccessfully(customer);
@@ -37,7 +37,7 @@ describe('Customer Service Test', () => {
         expect(customer.username).toBeTruthy();
     });
 
-    it('should get a new user and return OK', async () => {
+    test('should get a new user and return OK', async () => {
         const customerFactory = factoryKit.factory<Customer>(FactoryKey.customer);
         let customer = customerFactory.create(CustomerKey.stdCustomerActive);
         customer = await customerController.postSuccessfully(customer);
@@ -47,12 +47,12 @@ describe('Customer Service Test', () => {
         expect(fetchedCustomer).toEqual(customer);
     });
 
-    it('should get all customers and return OK', async () => {
+    test('should get all customers and return OK', async () => {
         const fetchedCustomers = await customerController.getAllSuccessfully();
         expect(fetchedCustomers).not.toHaveLength(0);
     });
 
-    it('should update a new user and return no content', async () => {
+    test('should update a new user and return no content', async () => {
         const customerFactory = factoryKit.factory<Customer>(FactoryKey.customer);
         let customer = customerFactory.create(CustomerKey.stdCustomerActive);
         customer = await customerController.postSuccessfully(customer);
@@ -66,18 +66,16 @@ describe('Customer Service Test', () => {
         expect(fetchedCustomer.username).toBe(updatedUsername);
     });
 
-    it('should delete a new user and return OK', async () => {
+    test('should delete a new user and return OK', async () => {
         const customerFactory = factoryKit.factory<Customer>(FactoryKey.customer);
         let customer = customerFactory.create(CustomerKey.stdCustomerActive);
         customer = await customerController.postSuccessfully(customer);
         await customerController.deleteSuccessfully(customer);
 
-
-        try {
-            await customerController.get(customer.id!); // @ts-ignore
-        } catch (error: AxiosError) {
-            expect(error.response.status).toBe(HttpStatusCode.BadRequest);
-            expect(error.response.data.errorMessage).toBe(ErrorMessage.customerNotFound);
-        }
+        await customerController.get(customer.id!)
+            .catch((error) => {
+                expect(error.response.status).toBe(HttpStatusCode.BadRequest);
+                expect(error.response.data.errorMessage).toBe(ErrorMessage.customerNotFound);
+            })
     });
 });
