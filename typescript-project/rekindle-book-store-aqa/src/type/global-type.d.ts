@@ -1,0 +1,1 @@
+type Supplier<T> = () => T;

@@ -1,7 +1,12 @@
-import {getClient} from "../rest/rekindle-rest-client";
+import {RekindleClient} from "../rest/rekindle-rest-client";
+
+declare global {
+  var rekindleClient: RekindleClient
+}
 
 const setup = async (): Promise<void> => {
-    await getClient().setupToken();
+  global.rekindleClient = new RekindleClient();
+  await global.rekindleClient.setupToken();
 };
 
 export default setup;

@@ -1,7 +1,7 @@
 import axios, {AxiosInstance, AxiosResponse} from 'axios';
 import {Environment, getEnv} from "../configuration/environment";
 import * as querystring from "node:querystring";
-import {TokenDto} from "@/model/token-dto";
+import {TokenDto} from "@/model/domain-model";
 import * as Console from "node:console";
 
 abstract class Client {
@@ -49,13 +49,8 @@ export class RekindleAuthClient extends Client {
     }
 }
 
-export function getClient() : RekindleClient{
-    return RekindleClient.instance;
-}
-
 export class RekindleClient extends Client {
 
-    static #instance: RekindleClient;
     private readonly auth: RekindleAuthClient = new RekindleAuthClient();
     private tokenDto?: TokenDto;
 
@@ -69,24 +64,17 @@ export class RekindleClient extends Client {
         this.axiosInstance.defaults.baseURL = this.env.baseUrl;
     }
 
-    public static get instance(): RekindleClient {
-        if (!RekindleClient.#instance) {
-            RekindleClient.#instance = new RekindleClient();
-        }
-        return RekindleClient.#instance;
-    }
-
     getAxios(): AxiosInstance {
-        this.axiosInstance.defaults.headers.common =
-            {'Authorization': `${this.tokenDto?.token_type} ${this.tokenDto?.access_token}`};
         return this.axiosInstance;
     }
 
 
-    async setupToken(): Promise<TokenDto> {
-        let tokenData: TokenDto = await this.auth.acquireToken().then(rsp => rsp.data)
-            .catch((err) => {throw err});
-        return new Promise(() => tokenData);
+    async setupToken(): Promise<void> {
+        this.tokenDto = await this.auth.acquireToken().then(rsp => rsp.data)
+            .catch((err) => {
+                throw err
+            });
+        this.axiosInstance.defaults.headers.common = {'Authorization': `${this.tokenDto.token_type} ${this.tokenDto.access_token}`}
     }
 
 }
@@ -110,4 +98,3 @@ function setResponseInterceptor(axiosInstance: AxiosInstance): void {
         return response
     })
 }
-

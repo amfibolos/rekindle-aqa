@@ -19,6 +19,6 @@ public class ValueObjectFactoryKit : IFactoryKit
             return (IFactory<T>) value;
         }
 
-        throw new ValueObjectNotFoundException($"Product identified by {key} has not yet been implemented");
+        throw new ValueObjectNotFoundException($"Factory identified by {key} has not yet been implemented");
     }
 }

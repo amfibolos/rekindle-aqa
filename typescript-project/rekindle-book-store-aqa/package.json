@@ -10,6 +10,7 @@
   "author": "Damian Malecki",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@jest/globals": "^29.7.0",
     "allure-commandline": "^2.30.0",
     "allure-jest": "^3.0.0-beta.10",
@@ -21,6 +22,7 @@
   "dependencies": {
     "axios": "^1.7.5",
     "config": "^3.3.12",
-    "rimraf": "^6.0.1"
+    "rimraf": "^6.0.1",
+    "uuid": "^10.0.0"
   }
 }

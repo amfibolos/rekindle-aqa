@@ -25,6 +25,10 @@
       "@/rest/*": ["src/rest/*"]
     }
   },
-  "include": ["./"],
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "src/type/**/*.d.ts"
+  ],
   "exclude": ["node_modules", "dist"]
 }
