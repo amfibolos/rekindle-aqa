@@ -1,6 +1,6 @@
 # Rekindle Test Automation Portfolio
 
-Welcome to the **Rekindle Test Automation Portfolio**. This repository showcases a collection of test automation modules designed to validate the Rekindle Book Store API. The tests cover various aspects of the application, leveraging different technologies and frameworks to ensure robustness and reliability.
+Welcome to the **Rekindle Test Automation Portfolio**. This repository showcases a collection of test automation modules designed to validate the **[Rekindle Book Store API](https://github.com/amfibolos/rekindle-book-store)**. The tests cover various aspects of the application, leveraging different technologies and frameworks to ensure robustness and reliability.
 
 ## Overview
 
