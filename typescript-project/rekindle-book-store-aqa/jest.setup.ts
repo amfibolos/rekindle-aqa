@@ -16,7 +16,7 @@ container.register('AuthClient', {useClass: RekindleAuthClient});
 container.register(
     "RestClient",
     {useClass: RekindleClient},
-    {lifecycle: Lifecycle.Singleton} // <- this is important
+    {lifecycle: Lifecycle.Singleton}
 );
 container.register<CustomerCrudController>('CustomerCrudController', {useClass: CustomerController});
 container.register<BookstoreProductCrudController>('BookstoreProductCrudController', {useClass: BookstoreProductController});

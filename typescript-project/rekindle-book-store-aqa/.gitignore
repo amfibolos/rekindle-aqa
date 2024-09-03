@@ -69,3 +69,7 @@ dist/
 
 # MacOS specific files
 .DS_Store
+
+# Allure
+/allure-results/
+/allure-report/
