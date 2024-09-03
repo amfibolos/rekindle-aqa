@@ -6,8 +6,8 @@
 *.log
 
 ### ALLURE
-allure-results
-allure-reports
+/allure-results/
+/allure-reports/
 
 ### IntelliJ IDEA ###
 .idea
