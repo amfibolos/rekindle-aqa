@@ -1,9 +1,15 @@
 import "reflect-metadata";
 import {container, Lifecycle} from "tsyringe";
 import {ValueObjectFactory} from "./src/model/factory";
-import {RekindleAuthClient, RekindleClient} from "./src/rest/rekindle-rest-client";
+import {RekindleAuthClient, RekindleClient, RestClient} from "./src/rest/rekindle-rest-client";
 import {CustomerController} from "./src/rest/controllers/customer-controller";
-import {CustomerCrudController} from "./src/rest/controllers/rest-controllers";
+import {
+    BookstoreCrudController,
+    BookstoreProductCrudController,
+    CustomerCrudController
+} from "./src/rest/controllers/rest-controllers";
+import {BookstoreController} from "./src/rest/controllers/bookstore-controller";
+import {BookstoreProductController} from "./src/rest/controllers/bookstore-product-controller";
 
 container.register('FactoryKit', {useClass: ValueObjectFactory});
 container.register('AuthClient', {useClass: RekindleAuthClient});
@@ -13,14 +19,5 @@ container.register(
     {lifecycle: Lifecycle.Singleton} // <- this is important
 );
 container.register<CustomerCrudController>('CustomerCrudController', {useClass: CustomerController});
-
-
-// declare global {
-//     var rekindleClient: RekindleClient
-// }
-//
-// const setup = async (): Promise<void> => {
-//     global.rekindleClient = new RekindleClient(new RekindleAuthClient());
-// };
-//
-// export default setup;
+container.register<BookstoreProductCrudController>('BookstoreProductCrudController', {useClass: BookstoreProductController});
+container.register<BookstoreCrudController>('BookstoreCrudController', {useClass: BookstoreController});

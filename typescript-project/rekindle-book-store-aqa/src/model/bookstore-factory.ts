@@ -1,5 +1,5 @@
 import {Bookstore} from "@/model/domain-model";
-import { faker } from '@faker-js/faker';
+import {faker} from '@faker-js/faker';
 import {Factory} from "@/model/factory";
 
 export const BookstoreKey = {

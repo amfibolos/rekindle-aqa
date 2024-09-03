@@ -3,7 +3,7 @@ import {Customer} from "@/model/domain-model";
 import {Factory, FactoryKey, FactoryKit} from "@/model/factory";
 import {CustomerController} from "@/rest/controllers/customer-controller";
 import {CustomerKey} from "@/model/customer-factory";
-import {AxiosResponse, HttpStatusCode} from "axios";
+import {HttpStatusCode} from "axios";
 import {ErrorMessage} from "../src/utils/utils";
 import {container} from "tsyringe";
 import {RestClient} from "@/rest/rekindle-rest-client";

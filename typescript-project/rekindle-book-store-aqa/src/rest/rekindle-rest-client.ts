@@ -2,7 +2,6 @@ import axios, {AxiosInstance, AxiosResponse} from 'axios';
 import {Environment, getEnv} from "../configuration/environment";
 import * as querystring from "node:querystring";
 import {TokenDto} from "@/model/domain-model";
-import * as Console from "node:console";
 import {inject, injectable, singleton} from "tsyringe";
 import * as AxiosLogger from 'axios-logger';
 
@@ -108,22 +107,8 @@ export class RekindleClient extends Client implements RestClient {
 
 function setRequestInterceptor(axiosInstance: AxiosInstance): void {
     axiosInstance.interceptors.request.use(AxiosLogger.requestLogger, AxiosLogger.errorLogger);
-    // axiosInstance.interceptors.request.use(request => {
-    //     Console.log('----------#########################----------')
-    //     Console.log('Starting Request', request.method, request.baseURL, request.url)
-    //     Console.log('Request Headers', request.headers)
-    //     Console.log('Request data', request.data)
-    //     return request
-    // })
 }
 
 function setResponseInterceptor(axiosInstance: AxiosInstance): void {
     axiosInstance.interceptors.response.use(AxiosLogger.responseLogger, AxiosLogger.errorLogger);
-    // axiosInstance.interceptors.response.use(response => {
-    //     Console.log('Response Status Code', response.status)
-    //     Console.log('Response headers', response.headers)
-    //     Console.log('Response data', response.data)
-    //     Console.log('----------#########################----------')
-    //     return response
-    // })
 }

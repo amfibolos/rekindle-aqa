@@ -1,4 +1,4 @@
-import {Bookstore, Customer, ValueObject, Product} from "@/model/domain-model";
+import {Bookstore, Customer, Product, ValueObject} from "@/model/domain-model";
 import {AxiosResponse} from "axios";
 
 export interface Get<T extends ValueObject, U> {

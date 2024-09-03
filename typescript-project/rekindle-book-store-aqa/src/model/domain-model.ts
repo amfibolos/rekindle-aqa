@@ -17,8 +17,8 @@ export interface Address extends ValueObject {
 
 export interface Bookstore extends ValueObject {
     id? : string
-    name : string
-    isActive : boolean
+    name? : string
+    isActive? : boolean
 }
 
 export interface Credit extends ValueObject {
@@ -62,9 +62,9 @@ export interface Payment extends ValueObject {
 
 export interface Product extends ValueObject {
     id? : string
-    name : string
-    price : number
-    available : boolean
+    name? : string
+    price? : number
+    available? : boolean
     bookstoreId? : string
     bookstores? : Array<string>
 }

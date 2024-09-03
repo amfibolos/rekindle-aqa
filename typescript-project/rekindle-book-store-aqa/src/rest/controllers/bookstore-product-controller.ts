@@ -3,13 +3,15 @@ import {AxiosInstance, AxiosResponse, HttpStatusCode} from "axios";
 import {BookstoreEndpoints} from "@/rest/Endpoint";
 import {BookstoreProductCrudController} from "@/rest/controllers/rest-controllers";
 import {expect} from "@jest/globals";
-import {RekindleClient} from "@/rest/rekindle-rest-client";
+import {RestClient} from "@/rest/rekindle-rest-client";
+import {inject, injectable} from "tsyringe";
 
+@injectable()
 export class BookstoreProductController implements BookstoreProductCrudController {
 
     private readonly client: AxiosInstance;
 
-    constructor(client: RekindleClient) {
+    constructor(@inject('RestClient') client: RestClient) {
         this.client = client.getAxios();
     }
 
