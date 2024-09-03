@@ -3,6 +3,20 @@ import {Environment, getEnv} from "../configuration/environment";
 import * as querystring from "node:querystring";
 import {TokenDto} from "@/model/domain-model";
 import * as Console from "node:console";
+import {inject, injectable, singleton} from "tsyringe";
+import * as AxiosLogger from 'axios-logger';
+
+export interface RestClient {
+    getAxios(): AxiosInstance
+
+    setupToken(): Promise<void>
+}
+
+export interface AuthClient {
+    getAxios(): AxiosInstance
+
+    acquireToken(): Promise<AxiosResponse>
+}
 
 abstract class Client {
     protected readonly env: Environment = getEnv();
@@ -10,15 +24,23 @@ abstract class Client {
 
     protected constructor(axiosInstance: AxiosInstance) {
         this.axiosInstance = axiosInstance;
+        AxiosLogger.setGlobalConfig({
+            method: true,
+            url: true,
+            params: true,
+            data: true,
+            status: true,
+            statusText: true,
+            headers: true
+        });
         setRequestInterceptor(this.axiosInstance);
         setResponseInterceptor(this.axiosInstance);
     }
 
-    abstract getAxios(): AxiosInstance;
-
 }
 
-export class RekindleAuthClient extends Client {
+@injectable()
+export class RekindleAuthClient extends Client implements AuthClient {
 
     constructor() {
         super(axios.create({
@@ -33,7 +55,7 @@ export class RekindleAuthClient extends Client {
         return this.axiosInstance;
     }
 
-    async acquireToken(): Promise<AxiosResponse<TokenDto>> {
+    async acquireToken(): Promise<AxiosResponse> {
         return this.axiosInstance.request({
             url: this.env.tokenUrl,
             method: 'POST',
@@ -49,12 +71,14 @@ export class RekindleAuthClient extends Client {
     }
 }
 
-export class RekindleClient extends Client {
+@injectable()
+@singleton()
+export class RekindleClient extends Client implements RestClient {
 
-    private readonly auth: RekindleAuthClient = new RekindleAuthClient();
+    private readonly auth: AuthClient;
     private tokenDto?: TokenDto;
 
-    constructor() {
+    constructor(@inject('AuthClient') auth: AuthClient) {
         super(axios.create({
             timeout: 10000,
             headers: {
@@ -62,6 +86,7 @@ export class RekindleClient extends Client {
             },
         }))
         this.axiosInstance.defaults.baseURL = this.env.baseUrl;
+        this.auth = auth;
     }
 
     getAxios(): AxiosInstance {
@@ -70,31 +95,35 @@ export class RekindleClient extends Client {
 
 
     async setupToken(): Promise<void> {
-        this.tokenDto = await this.auth.acquireToken().then(rsp => rsp.data)
-            .catch((err) => {
-                throw err
-            });
-        this.axiosInstance.defaults.headers.common = {'Authorization': `${this.tokenDto.token_type} ${this.tokenDto.access_token}`}
+        if (this.tokenDto == null) {
+            this.tokenDto = await this.auth.acquireToken().then(rsp => rsp.data)
+                .catch((err) => {
+                    throw err
+                });
+            // @ts-ignore
+            this.axiosInstance.defaults.headers.common = {'Authorization': `${this.tokenDto.token_type} ${this.tokenDto.access_token}`}
+        }
     }
-
 }
 
 function setRequestInterceptor(axiosInstance: AxiosInstance): void {
-    axiosInstance.interceptors.request.use(request => {
-        Console.log('----------#########################----------')
-        Console.log('Starting Request', request.method, request.baseURL, request.url)
-        Console.log('Request Headers', request.headers)
-        Console.log('Request data', request.data)
-        return request
-    })
+    axiosInstance.interceptors.request.use(AxiosLogger.requestLogger, AxiosLogger.errorLogger);
+    // axiosInstance.interceptors.request.use(request => {
+    //     Console.log('----------#########################----------')
+    //     Console.log('Starting Request', request.method, request.baseURL, request.url)
+    //     Console.log('Request Headers', request.headers)
+    //     Console.log('Request data', request.data)
+    //     return request
+    // })
 }
 
 function setResponseInterceptor(axiosInstance: AxiosInstance): void {
-    axiosInstance.interceptors.response.use(response => {
-        Console.log('Response Status Code', response.status)
-        Console.log('Response headers', response.headers)
-        Console.log('Response data', response.data)
-        Console.log('----------#########################----------')
-        return response
-    })
+    axiosInstance.interceptors.response.use(AxiosLogger.responseLogger, AxiosLogger.errorLogger);
+    // axiosInstance.interceptors.response.use(response => {
+    //     Console.log('Response Status Code', response.status)
+    //     Console.log('Response headers', response.headers)
+    //     Console.log('Response data', response.data)
+    //     Console.log('----------#########################----------')
+    //     return response
+    // })
 }

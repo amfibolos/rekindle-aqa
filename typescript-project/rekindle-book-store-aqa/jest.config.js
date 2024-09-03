@@ -9,7 +9,7 @@ module.exports = {
   modulePaths: [compilerOptions.baseUrl],
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths /*, { prefix: '<rootDir>/' } */),
   testEnvironment: "allure-jest/node",
-  globalSetup: "./src/hooks/api-global-setup.ts",
+  setupFilesAfterEnv: ['./jest.setup.ts'],
   transform: {
     "^.+.tsx?$": ["ts-jest",{}],
   },

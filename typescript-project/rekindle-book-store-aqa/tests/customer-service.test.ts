@@ -1,21 +1,22 @@
 import {afterAll, beforeAll, describe, expect, test} from "@jest/globals";
 import {Customer} from "@/model/domain-model";
-import {FactoryKey, FactoryKit, ValueObjectFactory} from "@/model/factory";
+import {Factory, FactoryKey, FactoryKit} from "@/model/factory";
 import {CustomerController} from "@/rest/controllers/customer-controller";
 import {CustomerKey} from "@/model/customer-factory";
 import {HttpStatusCode} from "axios";
 import {ErrorMessage} from "../src/utils/utils";
+import {container} from "tsyringe";
+import {RestClient} from "@/rest/rekindle-rest-client";
 
 describe('Customer Service Test', () => {
-    let factoryKit: FactoryKit;
-    let customerController: CustomerController;
+    let restClient : RestClient = container.resolve('RestClient');
+    let factoryKit: FactoryKit = container.resolve('FactoryKit');
+    let customerController: CustomerController = container.resolve('CustomerCrudController');
+    let customerFactory : Factory<Customer> = factoryKit.factory<Customer>(FactoryKey.customer);
     let customers: Customer[] = [];
 
-    beforeAll(() => {
-        //  factoryKit = Container.resolve<IFactoryKit>(IFactoryKit);
-        //  customerController = Container.resolve<ICustomerController>(ICustomerController);
-        factoryKit = new ValueObjectFactory();
-        customerController = new CustomerController(global.rekindleClient);
+    beforeAll(async () => {
+        await restClient.setupToken();
     });
 
     afterAll(async () => {
@@ -26,7 +27,6 @@ describe('Customer Service Test', () => {
     });
 
     test('should create a new user and return OK', async () => {
-        const customerFactory = factoryKit.factory<Customer>(FactoryKey.customer);
         let customer = customerFactory.create(CustomerKey.stdCustomerActive);
         customer = await customerController.postSuccessfully(customer);
         customers.push(customer);
@@ -38,11 +38,9 @@ describe('Customer Service Test', () => {
     });
 
     test('should get a new user and return OK', async () => {
-        const customerFactory = factoryKit.factory<Customer>(FactoryKey.customer);
         let customer = customerFactory.create(CustomerKey.stdCustomerActive);
         customer = await customerController.postSuccessfully(customer);
         customers.push(customer);
-
         const fetchedCustomer = await customerController.getSuccessfully(customer.id);
         expect(fetchedCustomer).toEqual(customer);
     });
@@ -53,7 +51,6 @@ describe('Customer Service Test', () => {
     });
 
     test('should update a new user and return no content', async () => {
-        const customerFactory = factoryKit.factory<Customer>(FactoryKey.customer);
         let customer = customerFactory.create(CustomerKey.stdCustomerActive);
         customer = await customerController.postSuccessfully(customer);
         customers.push(customer);
@@ -67,7 +64,6 @@ describe('Customer Service Test', () => {
     });
 
     test('should delete a new user and return OK', async () => {
-        const customerFactory = factoryKit.factory<Customer>(FactoryKey.customer);
         let customer = customerFactory.create(CustomerKey.stdCustomerActive);
         customer = await customerController.postSuccessfully(customer);
         await customerController.deleteSuccessfully(customer);

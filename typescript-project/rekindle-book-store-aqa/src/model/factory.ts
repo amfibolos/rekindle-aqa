@@ -2,6 +2,7 @@ import {ValueObject} from "@/model/domain-model";
 import {BookstoreFactory} from "@/model/bookstore-factory";
 import {CustomerFactory} from "@/model/customer-factory";
 import {ProductFactory} from "@/model/product-factory";
+import {injectable} from "tsyringe";
 
 export interface Factory<T extends ValueObject> {
 
@@ -20,6 +21,7 @@ export interface FactoryKit {
     factory<T extends ValueObject>(key: Symbol): Factory<T>
 }
 
+@injectable()
 export class ValueObjectFactory implements FactoryKit {
     // @ts-ignore
     private readonly map: Map<Symbol, Supplier<Factory<ValueObject>>> = new Map([
@@ -27,6 +29,10 @@ export class ValueObjectFactory implements FactoryKit {
         [FactoryKey.customer, () => new CustomerFactory()],
         [FactoryKey.product, () => new ProductFactory()]
     ]);
+
+
+    constructor() {
+    }
 
     factory<T extends ValueObject>(key: Symbol): Factory<T> {
         const supplier = this.map.get(key);

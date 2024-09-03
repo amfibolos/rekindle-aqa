@@ -30,9 +30,9 @@ export interface Credit extends ValueObject {
 
 export interface Customer extends ValueObject {
     id? : string
-    username : string
-    firstName : string
-    lastName : string
+    username? : string
+    firstName? : string
+    lastName? : string
 }
 
 export interface Item extends ValueObject {
